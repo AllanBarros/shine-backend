@@ -1,5 +1,5 @@
-fastapi==*
-sqlalchemy==*
-uvicorn==*
-psycopg2==*
-coverage==*
+fastapi
+sqlalchemy
+uvicorn
+psycopg2
+coverage
