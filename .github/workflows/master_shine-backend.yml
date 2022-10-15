@@ -22,13 +22,12 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Create and start virtual environment
+      - name: Download pipenv for virtual environment
         run: |
-          python -m venv venv
-          source venv/bin/activate
+          python -m pip install pipenv
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pipenv install --dev
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
@@ -38,7 +37,6 @@ jobs:
           name: python-app
           path: |
             . 
-            !venv/
 
   deploy:
     runs-on: ubuntu-latest
