@@ -1,0 +1,8 @@
+# dependencies
+Pipfile.lock
+
+# vscode
+.vscode
+
+# pycache
+__pycache__/
