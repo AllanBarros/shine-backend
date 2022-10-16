@@ -26,7 +26,7 @@ class Event(Base):
     event_details = Column(String(255), nullable=False)
     event_tags = relationship(
         "Classification",
-        lazy="dynamic",
+        lazy="joined",
         secondary=event_classification,
     )
 

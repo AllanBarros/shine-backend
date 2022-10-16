@@ -18,3 +18,7 @@ class ClassificationRepository:
     def list_tags(self) -> List[Classification]:
         query = self.db.query(Classification)
         return query.all()
+
+    def get_tags_id(self, tags_list) -> List[Classification]:
+        query = self.db.query(Classification)
+        return query.filter(Classification.classification_name.in_(tags_list))

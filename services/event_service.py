@@ -11,7 +11,8 @@ class EventService:
         self.eventRepository = eventRepository
 
     def list_events(self):
-        return self.eventRepository.list_events()
+        results = self.eventRepository.list_events()
+        return results
 
     def get_event_detail(self, event):
         return self.eventRepository.get_event_detail(event)

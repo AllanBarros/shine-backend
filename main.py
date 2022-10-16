@@ -10,7 +10,7 @@ init()
 app = FastAPI()
 
 origins = [
-    "http://localhost:3000",
+    "https://shine-frontend.azurewebsites.net",
 ]
 
 app.add_middleware(
