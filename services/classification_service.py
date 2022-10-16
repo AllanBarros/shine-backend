@@ -13,3 +13,7 @@ class ClassificationService:
 
     def list_tags(self):
         return self.classificationRepository.list_tags()
+
+    def add_tag(self, tag):
+        return self.classificationRepository.add_tag(tag)
+
